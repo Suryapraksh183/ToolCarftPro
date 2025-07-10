@@ -1,1 +1,145 @@
 
+<head>
+  <link rel="stylesheet" href="application.componant.css">
+  <style>
+    body {
+      background-color: #f0f0f2; /* Light blue-gray background for a modern look */
+      color: #dd6060; /* Dark gray font color for readability */
+      font-family: 'Roboto', sans-serif; /* Clean and professional font */
+    }
+
+    h1 {
+      color: #0066cc; /* Blue header color for emphasis */
+      font-weight: bold;
+    }
+
+    .navbar {
+      background-color: #004d99; /* Dark blue for the navigation bar */
+      color: white;
+      display: flex;
+      justify-content: center; /* Center the entire navbar content */
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center; /* Align items to the center horizontally */
+      align-items: center; /* Align items to the center vertically */
+      gap: 2rem; /* Add spacing between the links */
+    }
+
+    .nav-item {
+      color: white;
+      font-weight: 500;
+    }
+
+    .nav-item:hover {
+      color: #ffcc00; /* Yellow hover effect for navigation links */
+    }
+
+    .quote-btn {
+      background-color: #ff9900; /* Bright orange button */
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .quote-btn:hover {
+      background-color: #cc7a00; /* Darker orange on hover */
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #ffffff 0%, #e6f7ff 100%); /* Subtle gradient for hero section */
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      color: #004d99; /* Dark blue for hero header */
+    }
+
+    .products h2 {
+      color: #0066cc; /* Blue for product section header */
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .product-card {
+      background-color: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .learn-more {
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .learn-more:hover {
+      background-color: #004d99;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">    
+    <h1>Welcome to ToolCraft Pro</h1>
+    <p>Your one-stop solution for premium cutting tools and manufacturing solutions.</p>
+  </div>
+
+  <div class="main-container">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="ToolCraft Pro" />
+      </div>
+      <div class="nav-links">
+        <a href="#home" class="nav-item">Home</a>
+        <a href="#products" class="nav-item">Products</a>
+        <a href="#solutions" class="nav-item">Solutions</a>
+        <a href="#contact" class="nav-item">Contact</a>
+        <button class="quote-btn">Get Quote</button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="animate-text">Precision Tools for Tomorrow's Manufacturing</h1>
+        <p class="animate-text-delay">Advanced cutting tools and solutions for optimal performance</p>
+        <button class="cta-button">Explore Products</button>
+      </div>
+      <div class="hero-image">
+        <img src="assets/hero-tool.png" alt="Premium Tools" class="floating-animation" />
+      </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="products">
+      <h2>Our Premium Tools</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/cutting-tool.png" alt="Cutting Tool" />
+          </div>
+          <h3>Precision Cutting Tools</h3>
+          <p>High-performance cutting solutions for demanding applications</p>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <!-- Add more product cards as needed -->
+      </div>
+    </section>
+  </div>
+</body>
